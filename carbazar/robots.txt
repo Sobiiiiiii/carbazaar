@@ -1,0 +1,30 @@
+# CarBazar - Robots.txt
+# Allow search engines to crawl the site
+
+User-agent: *
+Allow: /
+Allow: /uploads/
+
+# Disallow admin and backend
+Disallow: /backend/
+Disallow: /backend/admin/
+Disallow: /backend/seller/
+Disallow: /backend/api/
+
+# Disallow user-specific pages
+Disallow: /cart.php
+Disallow: /wishlist.php
+Disallow: /orders.php
+Disallow: /my-transactions.php
+Disallow: /login.php
+Disallow: /register.php
+
+# Disallow search results with parameters
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Sitemap location
+Sitemap: http://localhost/carbazar/sitemap.xml
+
+# Crawl delay (optional - be nice to server)
+Crawl-delay: 1
